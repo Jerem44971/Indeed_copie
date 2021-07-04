@@ -8,23 +8,11 @@
 
 <div class="container">
     <div class="row mt-5">
-        {% for offer in offer_list %}
+      
             <div class="col-md-3">
-                <div class="card"> 
-                    <img src="{{ offer.image}}" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <a href="/offer">
-                            <h2 class="card-title fs-5 text-center">{{ offer.title | upper}}</h2>
-                        </a>
-                        <ul>
-                            <li>{{ offer.city }}</li> 
-                            <li>{{ offer.contract }}</li> 
-                            <li>{{ offer.duration }}</li> 
-                        </ul>  
-                    </div>
-                </div>
+                <h2>{{ offer.contract }}</h2>
             </div>
-        {% endfor %}
+    
     </div>
 </div>
 

@@ -27,7 +27,7 @@ class ContractType
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $slog;
+    private $slug;
 
     /**
      * @ORM\OneToMany(targetEntity=Offer::class, mappedBy="contract_type")
@@ -56,14 +56,14 @@ class ContractType
         return $this;
     }
 
-    public function getSlog(): ?string
+    public function getSlug(): ?string
     {
-        return $this->slog;
+        return $this->slug;
     }
 
-    public function setSlog(string $slog): self
+    public function setSlug(string $slug): self
     {
-        $this->slog = $slog;
+        $this->slug = $slug;
 
         return $this;
     }
